@@ -7,8 +7,8 @@
       v-for="d in whatWeDo" :key="d.title") {{ d.title }}
   .quick-links.flex.column.align-start
     .title Quick Links
-    .link Careers
-    .link Contact
+    router-link.link(to="/about/careers/joinus") Careers
+    router-link.link(to="/about/partnering/contact") Contact
   .join-us.flex.column.align-start
     .title Join us on Social
     .icon-link.flex.align-center
@@ -107,6 +107,7 @@ export default {
   .link {
     color: #9C9C9C;
     cursor: pointer;
+    text-decoration: none !important;
   }
   .icon-link {
     gap: 24px;
