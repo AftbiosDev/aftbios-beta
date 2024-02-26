@@ -129,5 +129,11 @@ export default {
   border-top-right-radius: 240px;
   padding: 87px;
   font-size: 20px;
+  @media only screen and (max-width: 900px) {
+      padding: 30px !important;
+      border-radius: 0 !important;
+      margin: 0 !important;
+  }
 }
+
 </style>
